@@ -1,15 +1,16 @@
 import 'package:emart_app/consts/consts.dart';
 import 'package:flutter/material.dart';
 
-Widget ourButton() {
+Widget ourButton({onPress, textColor, color, String? title}) {
   return ElevatedButton(
     style: ElevatedButton.styleFrom(
-      backgroundColor: redColor,
+      backgroundColor: color,
       padding: const EdgeInsets.all(12),
     ),
     onPressed: () {
+      onPress;
     }, 
-    child: login.text.white.fontFamily(bold).make(),
+    child: title!.text.color(textColor).fontFamily(bold).make(),
   );
 }
 
