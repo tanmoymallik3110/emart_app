@@ -18,3 +18,8 @@ const privacyPolicy = "Privacy Policy";
 const alreadyHaveAccount = "Already have an account? ";
 
 const home = "Home", categories = "Categories", cart = "Cart", account = "Account";
+
+const searchanything = "Search anything...", 
+todaysDeal = "Today's Deal", flashSale = "Flash Sale", 
+brands = "Brands", topCategories = "Top Categories",
+topSeller = "Top Seller", featuredCategories = "Featured Categories";
