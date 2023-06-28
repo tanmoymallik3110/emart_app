@@ -43,3 +43,35 @@ const featuredTitle2 = [
   tShirt,
   mobilePhone,
 ];
+
+const categoriesList = [
+  womenClothing, 
+  menClothingFashion,
+  compAccess,
+  automobile,
+  kidToys,
+  sports,
+  jewelery,
+  cellphone,
+  furniture,
+];
+
+const categoriesImages = [
+  imgFc1,
+  imgFc8,
+  imgFc2,
+  imgFc3,
+  imgFc4, 
+  imgFc5,
+  imgFc7,
+  imgFc6,
+  imgFc9,
+];
+
+const itemDetailsButtonList = [
+  video,
+  reviews,
+  sellerPolicy,
+  returnPolicy,
+  supportPolicy,
+];
