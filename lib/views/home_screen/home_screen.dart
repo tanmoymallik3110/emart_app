@@ -23,11 +23,11 @@ class HomeScreen extends StatelessWidget {
               color: lightGrey,
               child: TextFormField(
                 decoration: InputDecoration(
-                  suffixIcon: Icon(Icons.search),
+                  suffixIcon: const Icon(Icons.search),
                   filled: true,
                   fillColor: whiteColor,
                   hintText: searchanything,
-                  hintStyle: TextStyle(color: textfieldGrey),
+                  hintStyle: const TextStyle(color: textfieldGrey),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(16),
                     borderSide: const BorderSide(
@@ -148,8 +148,8 @@ class HomeScreen extends StatelessWidget {
                     ),
 
 
-                    20.heightBox,
                     //featured product
+                    20.heightBox,
 
                     Container(
                       padding: const EdgeInsets.all(12),
@@ -166,21 +166,22 @@ class HomeScreen extends StatelessWidget {
                             scrollDirection: Axis.horizontal,
                             child: Row(
                               children: List.generate(
-                                6, (index) => 
+                                featuredSliderImg.length, (index) =>
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Image.asset(imgP1, width: 150, fit: BoxFit.cover),
+                                    Image.asset(featuredSliderImg[index], width: 150, fit: BoxFit.cover),
                                     10.heightBox,
-                                    "Laptop 4/64GB".text
+                                    featuredSliderTitle[index].text
                                     .fontFamily(semibold).color(darkFontGrey).make(),
                                     10.heightBox,
-                                    "\$600".text
+                                    featuredItemPrice[index].text
                                     .color(redColor).fontFamily(bold).size(16).make(),
                                     10.heightBox,
                                   ],
                                 ).box.white
-                                .roundedSM.margin(const EdgeInsets.symmetric(horizontal: 4))
+                                .roundedSM
+                                .margin(const EdgeInsets.symmetric(horizontal: 4))
                                 .padding(const EdgeInsets.all(8)).make(),
                               ),
                             ),
@@ -196,12 +197,12 @@ class HomeScreen extends StatelessWidget {
                     VxSwiper.builder(
                       aspectRatio: 16 / 9,
                       autoPlay: true,
-                      height: 150,
+                      height: 110,
                       enlargeCenterPage: true,
-                      itemCount: secondSliderslidersList.length, 
+                      itemCount: thirdSliderslidersList.length, 
                       itemBuilder: (context, index) {
                         return Image.asset(
-                            secondSliderslidersList[index], 
+                            thirdSliderslidersList[index], 
                             fit: BoxFit.fill,
                           ).box.rounded
                           .clip(Clip.antiAlias)
@@ -210,8 +211,8 @@ class HomeScreen extends StatelessWidget {
                     ),
 
 
-                    20.heightBox,
                     //all products section
+                    20.heightBox,
                     
                     GridView.builder(
                       physics: const NeverScrollableScrollPhysics(),
@@ -227,12 +228,12 @@ class HomeScreen extends StatelessWidget {
                         return  Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Image.asset(imgP5, width: 200, height: 200, fit: BoxFit.cover),
-                            Spacer(),
-                            "Laptop 4/64GB".text
+                            Image.asset(allProductImg[index], width: 200, height: 200, fit: BoxFit.cover),
+                            const Spacer(),
+                            allProductTitle[index].text
                             .fontFamily(semibold).color(darkFontGrey).make(),
                             10.heightBox,
-                            "\$600".text
+                            allProductPrice[index].text
                             .color(redColor).fontFamily(bold).size(16).make(),
                             10.heightBox,
                           ],

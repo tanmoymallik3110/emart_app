@@ -20,6 +20,12 @@ const secondSliderslidersList = [
   imgSs4,
 ];
 
+const thirdSliderslidersList = [
+  imgFd1,
+  imgFd2,
+  imgFd3,
+];
+
 const featuredImages1 = [
   imgS1,
   imgS2,
@@ -42,6 +48,63 @@ const featuredTitle2 = [
   girlsDress,
   tShirt,
   mobilePhone,
+];
+
+const featuredSliderTitle = [
+  laptop1,
+  makeupBox,
+  laptop2,
+  ladiesShoes,
+  bag,
+  boots,
+  glass,
+];
+
+const featuredItemPrice = [
+  laptop1Price,
+  makeupBoxPrice,
+  laptop2Price,
+  ladiesShoesPrice,
+  bagPrice,
+  bootsPrice,
+  glassPrice,
+];
+
+const featuredSliderImg = [
+  imgP1,
+  imgP2,
+  imgP3,
+  imgP4,
+  imgP5,
+  imgP6,
+  imgP7,
+];
+
+const allProductTitle = [
+  product1,
+  product2,
+  product3,
+  product4,
+  product5,
+  product6,
+];
+
+const allProductPrice = [
+  product1Price,
+  product2Price,
+  product3Price,
+  product4Price,
+  product5Price,
+  product6Price,
+];
+
+const allProductImg = [
+  imgPi5,
+  imgPi5,
+  imgPi5,
+  imgPi5,
+  imgPi5,
+  imgPi5,
 ];
 
 const categoriesList = [
@@ -74,4 +137,22 @@ const itemDetailsButtonList = [
   sellerPolicy,
   returnPolicy,
   supportPolicy,
+];
+
+const profileButtonsList = [
+  orders,
+  wishlist,
+  messages,
+  wallet,
+  points, 
+  refund,
+];
+
+const profileButtonsIcon = [
+  icOrders,
+  icOrders,
+  icMessages,
+  icWallet,
+  icPoints,
+  icRefund,
 ];
